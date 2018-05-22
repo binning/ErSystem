@@ -1,0 +1,462 @@
+/* 公办小学入学报名 */
+
+.public-primary-img {
+    width: 100%;
+    height: 3.46rem;
+}
+
+.child-list {
+    width: 6.9rem;
+    padding: 0.4rem 0;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.16rem;
+    margin: 0.7rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+/* .child-list::before {
+    content: "";
+    width: 0.16rem;
+    height: 100%;
+    display: inline-block;
+    border-radius: 0.16rem 0 0 0.16rem;
+} */
+
+.child-list .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.4rem 0 0.3rem;
+}
+
+.child-list .open div {
+    display: inline-block;
+}
+
+.child-list .icon-box {
+    padding: 0.14rem 0.18rem;
+    border-radius: 0.08rem;
+}
+    .child-list .icon-box.equal {
+        min-height: 0.36rem;
+        min-width: 0.36rem;
+        text-align:center;
+        line-height:0.36rem;
+    }
+        .child-list .icon-box.equal span {
+            line-height: 0.36rem;
+            
+        }
+.child-list .icon-box i{
+    font-size: 0.36rem;
+}
+.child-list .yellow {
+    background-image: linear-gradient(0deg, #ffac21 0%, #ffc42b 100%);
+}
+.child-list .green {
+    background-image: linear-gradient(0deg, #1ac1b7 0%, #1ed28e 100%);
+}
+.child-list .blue {
+    background-image: linear-gradient(0deg, #0398ff 0%, #67d2ff 100%);
+}
+.child-list .blue-green{
+    background-image: linear-gradient(0deg, #ff205d 0%, #ff3240 0%, #ff4323 0%, #b38017 0%, #66bc0b 0%, #9ada18 100%)
+}
+.child-list .red{
+    background-image: linear-gradient(0deg, #8c81ff 0%, #c651ae 0%, #ff205d 0%, #ff4323 100%);
+}
+.child-list .flex-box .cont-box {
+    /*margin-left: 0.2rem;*/
+}
+
+ .child-list .flex-box .tit {
+        font-size: 0.32rem;
+        line-height: 0.44rem;
+        color: #383838;
+        word-wrap: break-word;
+        margin-left:0.2rem;
+    }
+
+.child-list .flex-box .address {
+    font-size: 0.26rem;
+    line-height: 0.44rem;
+    color: #929292;
+}
+
+.non-registered {
+    margin: 0.3rem auto;
+}
+
+.child-list.yellow {
+    border-left: 0.16rem solid#ffac21;   
+}
+
+.child-list.green {
+    border-left: 0.16rem solid #1ed28e; 
+}
+.child-list.blue {
+    border-left: 0.16rem solid #0398ff; 
+}
+.child-list.blue-green {
+    border-left: 0.16rem solid #66bc0b; 
+}
+.child-list.red{
+    border-left: 0.16rem solid #ff205d; 
+}
+
+/* 家长须知 */
+.content-list{
+    padding-bottom: 0.4rem;
+}
+.content-box {
+    margin-top: 0.24rem;
+    padding: 0.39rem 0.48rem 0.2rem 0.3rem;
+    background-color: #fff;
+}
+.content-box.more{
+    margin-top:0;
+    padding-top:0.2rem;
+}
+
+.content-box .title {
+    font-size: 0.36rem;
+    line-height: 0.4rem;
+    color: #383838;
+    text-align: center;
+}
+
+.content-box .text {
+    font-size: 0.28rem;
+    line-height: 0.44rem;
+    text-indent: 0.4rem;
+    color: #929292;
+    margin-top: 0.3rem;
+}
+
+.content-box .note {
+    color: #0499ff;
+}
+
+.have-read {
+    padding-left: 0.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.have-read label {
+    font-size: 0.32rem;
+    color: #383838;
+    margin-left: 0.2rem
+}
+
+/* 儿童入学信息 */
+.title-box{
+	padding: 0.26rem 0.2rem;
+	font-size: 0.32rem;
+    color: #383838;
+    text-align: center;
+}
+.form-box form{
+    background-color: #fff;
+    padding: 0 0.3rem 0.2rem 0.4rem;
+}
+.form-box .form{
+    padding-top: 0.42rem;
+    padding-bottom: 0.57rem;
+}
+.form-box form ul li{
+    width: 100%;
+    padding: 0.28rem 0;
+    justify-content: flex-start;
+    border-bottom: 0.02rem solid #efefef;
+}
+.form-box i{
+    font-size: 0.36rem;
+}
+.form-box input{
+    height: 0.36rem;
+    margin-left: 0.3rem;
+    flex: 1;
+    font-size: 0.3rem;
+    width: 100%;
+}
+/* 儿童入学父母信息 */
+.form-box .flex-center label{
+	font-size:0.3rem;
+	line-height: 0.44rem;
+    color: #c0c0c0;
+    margin-left: 0.2rem;
+}
+.form-box .idimage{
+    padding: 0.58rem 0 0.58rem 1.99rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-between;
+    margin-top: 0.1rem;
+}
+.form-box .flex-center.border-top{
+    border-top: 0.02rem solid #efefef;
+    margin-top: 0.2rem;
+}
+.form-box .idimage span{
+	font-size: 0.3rem;
+    color: #ffffff;
+}
+.form-box .idimage i{
+    margin-left: 0.3rem;
+    font-size: 0.64rem;
+    margin-right: 0.2rem;
+}
+.form-box .idimage.id-front{
+    background-image: url(../img/idfront.jpg);
+    margin-top: 0.3rem;
+}
+.form-box .idimage.id-verso{
+    background-image: url(../img/idverso.png);  
+}
+.form-box .idimage.id-juzhu{
+    background-image: url(../img/juzhu.jpg);  
+}
+/* .foot-box{
+    margin-top: 0.4rem;
+} */
+
+/* 上传户籍信息 */
+.form-box .huji-image{
+    background-image: url(../img/hujibg.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 2.8rem;
+    margin-top: 0.2rem;
+}
+.form-box .hj-front{
+    margin-top: 0.2rem;
+}
+.form-box .img-box{
+    width: 3.70rem;
+    height: 2.28rem;
+    display: inline-block;
+}
+.form-box .img-box img{
+    width: 100%;
+    height: 100%;
+}
+.form-box .img-box .one-page{
+    width: 1.45rem;
+    height: 2.41rem;
+    margin: -0.1rem auto;
+}
+.form-box .huji-image .post-image{
+    width: 1.5rem;
+    margin-left: 0.72rem;
+    text-align: center;
+}
+.form-box .huji-image .post-image p{
+	font-size: 0.3rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+.form-box .huji-image .post-image i{
+    font-size: 0.64rem;
+}
+
+/* 志愿填报 */
+.form-box .choice-school{
+    justify-content: space-between;
+    position: relative;
+}
+.choice-school > span{
+    display: inline-block;
+    /*text-align: right;*/
+    width: 60%;
+    word-break: break-all;
+}
+.form-box .school-name span{
+    margin-left: 0.1rem;
+   
+}
+.form-box .school-name .number{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, #0398ff 0%, #67d2ff 100%);
+    text-align: center;
+	font-size: 0.2rem;
+    color: #f7f7f7;
+}
+.form-box .school-name .number.green{
+    background-image: linear-gradient(0deg, #ff205d 0%, #ff3240 0%, #ff4323 0%,		#b38017 0%, #66bc0b 0%, #9ada18 100%);
+}
+.form-box .school-name .number.yellow{
+    background-image: linear-gradient(0deg, #ffac21 0%, #ffc42b 100%);
+}
+.form-box .checkbox{
+ flex: 0;
+}
+.form-box .information{
+    padding:0.3rem 0;
+	font-size: 0.28rem;
+	line-height: 0.44rem;
+    color: #0499ff;
+    text-indent: 0.4rem;
+}
+/* 信息确认 */
+.title-box.left{
+    padding: 0.3rem;
+}
+.title-box.left p{
+    text-align: left;
+    margin-left: 0.1rem;
+}
+.form-box .name-list{
+	font-size:0.3rem;
+	color: #c0c0c0;
+}
+
+/* 非开发区家长须知 */
+.content-box .text.no-margain{
+    margin-top:0rem;
+}
+
+/* 上传结婚证 */
+.form-box .jiehun-img{
+    height: 3.32rem;
+    background-image: linear-gradient(180deg, #109aff 0%, #00d5ff 100%);
+    border-radius: 0.1rem;
+    margin-top: 0.3rem;
+}
+.form-box .jiehun-img .jiehun-box{
+    width: 3.81rem;
+	height: 2.81rem;
+}
+
+/* 非开发区儿童报名 */
+.child-list .icon-box span{
+	font-size: 0.28rem;
+	color: #f7f7f7;
+}
+.child-list.no-develop{
+    margin-bottom: 0.2rem;
+    margin-top: 0;
+    height: 100%;
+    padding: 0.3rem 0;
+}
+.child-list.blue.no-develop{
+    margin-top: 0.3rem;
+}
+
+/* fourth  企业信息 */
+.title-box.space-betwen{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.37rem 0.29rem;
+}
+.jobImgBox{
+    height: 6rem;
+    padding: 0.3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    
+}
+.jobImgBox .job-img{
+    width: 1.28rem;
+    height: 1.28rem;
+    background-color: #f7f7f7;
+    margin-top: 0.14rem;
+    margin-left: 0.1rem;
+    position: relative;
+}
+.jobImgBox .job-img i.close{
+    font-size: 0.23rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.jobImgBox .job-img.add-img i{
+    font-size: 0.32rem;
+    color: #999;
+}
+.jobImgBox .job-img img{
+    width: 100%;
+    height: 100%;
+}
+.choice-school.auto-width > span {
+    /*width: auto;*/
+    width:40%;
+}
+
+/*审核进度*/
+.result-list {
+    width: 6.3rem;
+    margin: 0.2rem auto;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.16rem;
+    padding: 0.3rem;
+}
+
+.result-list ul li a {
+    width: 100%;
+    padding: 0.32rem 0;
+    border-bottom: 0.02rem solid #efefef;
+}
+
+.result-list .head-left img {
+    width: 0.72rem;
+}
+
+.result-list .head-left span {
+   margin-left: 0.2rem;
+   font-size: 0.3rem;
+   color: #383838;
+}
+
+.result-list .head-right span {
+    font-size: 0.3rem;
+    color: #66be0b;
+    margin-right: 0.1rem;
+}
+
+.result-list .head-right span.blue {
+   color: #0599ff;
+}
+
+.result-list .head-right span.red {
+    color: #ff2051;
+}
+
+.head-box {
+    padding: 0.42rem 0.6rem;
+    background-image: linear-gradient(-90deg, #0398ff 0%, #67d2ff 100%), linear-gradient( #0079ff, #0079ff);
+}
+.head-box.red {
+    background-image: linear-gradient(-90deg, #FF4323 0%, #FF205E 100%);
+}
+
+.head-box .headcontent-box img {
+     width: 1.75rem;
+     margin-left:0.2rem;
+}
+
+.head-box .headcontent-box p {
+    color: #fff;
+    font-size: 0.34rem;
+    letter-spacing: 0.02rem;
+}
+
+.head-box .headcontent-box p:nth-child(2) {
+    font-size: 0.26rem;
+    margin-top: 0.15rem;
+}

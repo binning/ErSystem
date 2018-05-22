@@ -1,0 +1,97 @@
+.swiper-container img{
+    width: 100%;
+    height: 3.12rem;
+}
+.intro-list{
+    padding: 0.4rem 0.3rem;
+    background-color: #fff;
+    margin-top: 0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+.intro-list a{
+    display: inline-block;
+    color: #383838;
+}
+.intro-list a p{
+    font-size: 0.3rem;
+    margin-top: 0.18rem;
+}
+.intro-list .font-box{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-list .font-box i{
+    font-size: 0.32rem;
+}
+.apply-list i{
+    font-size: 0.36rem;
+}
+.intro-list .red{
+    background-image: linear-gradient(0deg, #8c81ff 0%, #c651ae 0%, #ff205d 0%, #ff4323 100%);
+}
+.intro-list .blue{
+    background-image: linear-gradient(0deg, #0398ff 0%, #67d2ff 100%);
+}
+.intro-list .green{
+    background-image: linear-gradient(0deg, #1ac1b7 0%, #1ed28e 100%);
+}
+.intro-list .yellow{
+    background-image: linear-gradient(0deg,   #ffac21 0%, #ffc42b 100%);
+}
+
+.apply-list{
+    padding: 0.29rem 0.3rem 0.4rem 0.3rem;
+    background-color: #fff;
+    margin-top: 0.24rem;
+}
+.apply-list .list-title{
+	font-family: 'PingFang-SC-Bold';
+	font-size: 0.32rem;
+	color: #383838;
+}
+.apply-list .apply-item{
+    width: 3.3rem;
+    height: 1.63rem;  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.apply-list .apply-item a{
+    display: block;
+}
+.apply-list .apply-item div{
+    width: 0.72rem;
+    height: 0.72rem;
+    background-color: #ffffff;
+    border-radius: 0.08rem;
+    margin: 0.2rem auto;
+}
+.apply-list .apply-item p{
+	font-family: 'PingFang-SC-Medium';
+	font-size: 0.32rem;
+    color: #fff;
+    margin-top: -0.1rem;
+}
+.apply-list .ld-primary{
+    background-image:url('../img/ldxiaoxue.png');
+}
+.apply-list .ld-junior{
+    background-image:url('../img/ldchuzhong.png');
+}
+.apply-list .kf-primary{
+    background-image:url('../img/kfxiaoxue.png');
+}
+.apply-list .kf-junior{
+    background-image:url('../img/kaifachuzhong.png');
+}
+.apply-list .item-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+}

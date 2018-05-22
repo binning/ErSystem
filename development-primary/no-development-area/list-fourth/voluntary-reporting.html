@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>志愿填报</title>
+    <link href="../../../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../../../css/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="../../../css/public-primary.css" type="text/css" rel="stylesheet" />
+
+    <script src="../../../js/jquery.js" type="text/javascript"></script>
+    <script src="../../../js/fontsize.js" type="text/javascript"></script>
+    <script src="../../../js/jquery.icheck.min.js" type="text/javascript" ></script>
+</head>
+
+<body>
+    <div class="form-box">
+        <form>
+            <ul>
+                <label class="radio-label" for="first-volunteer">
+                <li class="flex-center choice-school">
+                    <div class="school-name">
+                        <p class="number">01</p>
+                        <span>第一中（小）学</span>
+                    </div>
+                    <input type="radio" id="first-volunteer" name="iCheck" checked>
+                </li>
+            </label>
+            <label class="radio-label" for="second-volunteer">
+                <li class="flex-center choice-school">
+                    <div class="school-name">
+                        <div class="number green">01</div>
+                        <span>开发区第二小学</span>
+                    </div>
+                    <input type="radio" id="second-volunteer" name="iCheck">
+                </li>
+            </label>
+                <label class="radio-label" for="third-volunteer">
+                <li class="flex-center choice-school">
+                    <div class="school-name">
+                        <div class="number yellow">03</div>
+                        <span>丽水市秀山小学</span>
+                    </div>
+                    <input type="radio" id="third-volunteer" name="iCheck">
+                </li>
+            </label>
+            </ul>
+            <div class="information">
+                <span>报名新生需在开发区第一中（小）学、开发区第二小学、丽水市秀山小学三所学校中选择其一，并默认服从三所学校自愿分配。</span>
+            </div>
+        </form>
+    </div>
+    <div class="foot-box">
+        <div class="foot-fixed">
+            <a href="./confirm-info.html" class="blue-btn">下一步</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[name='iCheck']").iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
+</html>

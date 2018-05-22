@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>入学报名</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href="css/swiper-3.4.2.min.css" type="text/css" rel="stylesheet" />
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/fontsize.js" type="text/javascript"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript"></script>
+
+</head>
+<style>
+    /* 设置分页器颜色 */
+    .swiper-pagination-bullet-active{
+        background: #efefef;
+    }
+</style>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/scroll.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/scroll.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/scroll.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="intro-list">
+        <a href="">
+            <div class="font-box red">
+                <i class="iconfont icon-jiachangxuzhi white"></i>
+            </div>
+            <p>家长须知</p>
+        </a>
+        <a href="">
+            <div class="font-box blue">
+                <i class="iconfont icon-zhaoshengzhengce white"></i>
+            </div>
+            <p>招生政策</p>
+        </a>
+        <a href="">
+            <div class="font-box green">
+                <i class="iconfont icon-xuequchaxun white"></i>
+            </div>
+            <p>学区查询</p>
+        </a>
+        <a href="./apply-progress/result-list.html">
+            <div class="font-box yellow">
+                <i class="iconfont icon-baomingjindu white"></i>
+            </div>
+            <p>报名进度</p>
+        </a>
+    </div>
+    <div class="apply-list">
+        <p class="list-title">莲都区</p>
+        <div class="item-box">
+            <a href="#" class="apply-item ld-primary">
+                <div class="flex-center">
+                    <i class="iconfont icon-gongbanxiaoxuebaoming blue"></i>
+                </div>
+                <p>公办小学入学报名</p>
+            </a>
+            <a href="#" class="apply-item ld-junior">
+                <div class="flex-center">
+                    <i class="iconfont icon-gongbanchuzhongbaoming green"></i>
+                </div>
+                <p>公办初中入学报名</p>
+
+            </a>
+        </div>
+    </div>
+    <div class="apply-list">
+        <p class="list-title">开发区</p>
+        <div class="item-box">
+            <a href="development-primary/public-index.html" class="apply-item kf-primary">
+                <div class="flex-center">
+                    <i class="iconfont icon-gongbanxiaoxuebaoming yellow"></i>
+                </div>
+                <p>公办小学入学报名</p>
+        </a>
+        <a href="#" class="apply-item kf-junior">
+            <div class="flex-center">
+                <i class="iconfont icon-gongbanchuzhongbaoming green-yellow"></i>
+            </div>
+            <p>公办初中入学报名</p>
+        </a>
+    </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 4000,
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        })
+    })
+</script>
+
+</html>

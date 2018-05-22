@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>入学儿童信息</title>
+    <link href="../../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/public-primary.css" type="text/css" rel="stylesheet" />
+   
+
+    <script src="../../js/jquery.js" type="text/javascript"></script>
+    <script src="../../js/fontsize.js" type="text/javascript"></script>
+    
+</head>
+<style>
+ 			
+</style>
+
+<body>
+    <img class="public-primary-img" src="../../img/child-info.png" alt="">
+    <div class="title-box">
+            <p class="title">请填写儿童信息</p>
+    </div>
+    <div class="form-box">
+       <form>
+           <ul>
+               <li class="flex-center">
+                   <i class="iconfont icon-shenfenzhenghao blue"></i>
+                   <label>学生身份证号码</label>
+                   <input class="no-border" type="text">
+               </li>
+               <li class="flex-center">
+                <i class="iconfont icon-xingming blue"></i>
+                <label>学生姓名</label>
+                <input class="no-border" type="text">
+            </li>
+            <li class="flex-center home-address">
+                <i class="iconfont icon-hujisuozaidi blue"></i>
+                <label>户籍所在地</label>
+                <input disabled class="no-border select-value" type="text" value="">
+                <i class="iconfont icon-jiantou gray"></i>
+            </li>
+            <li class="flex-center">
+                <i class="iconfont icon-jiatingxiangxizhuzhi blue"></i>
+                <label>家庭详细住址</label>
+                <textarea rows="" cols="" name="" class="textarea-address-detail"></textarea>
+                <!--<textarea class="no-border" type="text">-->
+            </li>
+           </ul>
+       </form>
+       	<!-------地区选择---------->
+		<div id="select-area" class="modal-mask" style="display: none;">
+                <div class="workers-insured-mask city-wrap">
+                    <h3>
+                <a href="" class="btnl">返回</a>
+                <a class="btnr">关闭</a>
+            </h3>
+                    <!-----省份列表------>
+                    <div class="citylist" id="one-level">
+                        <ul>
+                            <li>
+                                <a href="#">浙江省</a>
+                            </li>
+                            <li>
+                                <a href="#">江苏省</a>
+                            </li>
+                            <li>
+                                <a href="#">河北省</a>
+                            </li>
+                            <li>
+                                <a href="#">陕西省</a>
+                            </li>
+                            <li>
+                                <a href="#">辽宁省</a>
+                            </li>
+                            <li>
+                                <a href="#">上海</a>
+                            </li>
+                            <li>
+                                <a href="#">北京</a>
+                            </li>
+                            <li>
+                                <a href="#">内蒙古自治区</a>
+                            </li>
+                            <li>
+                                <a href="#">黑龙江省</a>
+                            </li>
+                            <li>
+                                <a href="#">北京</a>
+                            </li>
+                            <li>
+                                <a href="#">安徽省</a>
+                            </li>
+                            <li>
+                                <a href="#">吉林省</a>
+                            </li>
+                            <li>
+                                <a href="#">天津</a>
+                            </li>
+                            <li>
+                                <a href="#">河北省</a>
+                            </li>
+                            <li>
+                                <a href="#">湖南省</a>
+                            </li>
+                            <li>
+                                    <a href="#">北京</a>
+                                </li>
+                                <li>
+                                    <a href="#">安徽省</a>
+                                </li>
+                                <li>
+                                    <a href="#">吉林省</a>
+                                </li>
+                                <li>
+                                    <a href="#">天津</a>
+                                </li>
+                                <li>
+                                    <a href="#">河北省</a>
+                                </li>
+                                <li>
+                                    <a href="#">湖南省</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <!-----城市列表------>
+                    <div class="citylist" id="two-level" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="#">杭州市</a>
+                            </li>
+                            <li>
+                                <a href="#">宁波</a>
+                            </li>
+                            <li>
+                                <a href="#">温州</a>
+                            </li>
+                            <li>
+                                <a href="#">绍兴</a>
+                            </li>
+                            <li>
+                                <a href="#">嘉兴</a>
+                            </li>
+                            <li>
+                                <a href="#">衢州</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-----区列表------>
+                    <div class="citylist" id="three-level" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="#">西湖区</a>
+                            </li>
+                            <li>
+                                <a href="#">江干区</a>
+                            </li>
+                            <li>
+                                <a href="#">下城区</a>
+                            </li>
+                            <li>
+                                <a href="#">上城区</a>
+                            </li>
+                            <li>
+                                <a href="#">拱墅区</a>
+                            </li>
+                            <li>
+                                <a href="#">余杭区</a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>  
+            </div>
+    </div>
+    <div class="foot-box">
+        <div class="foot-fixed">
+            <a href="../development-area/parents-info.html" class="blue-btn">下一步</a>
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    $(function() {
+        var address = '';
+        //地区选择
+        $('.home-address').click(function() {
+            $('#select-area').show();
+        });
+        $('.citylist ul li').on('click',function(){          
+
+        })
+
+        
+    })
+</script>
+
+</html>
